@@ -1,4 +1,4 @@
-package com.chadik;
+package com.chadik.gensw;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

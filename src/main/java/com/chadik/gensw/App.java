@@ -1,4 +1,4 @@
-package com.chadik;
+package com.chadik.gensw;
 
 /**
  * Hello world!
