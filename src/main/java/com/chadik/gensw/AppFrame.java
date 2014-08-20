@@ -10,13 +10,14 @@ import net.miginfocom.swing.MigLayout;
 import com.chadik.gensw.component.GenswLabel;
 import com.chadik.gensw.component.GenswLabelMandatory;
 import com.chadik.gensw.component.GenswTextField;
+import com.chadik.gensw.component.panel.GenswPasswordPanel;
 
 public class AppFrame extends JFrame {
 
 	public AppFrame() {
 
 		setTitle("Gensw");
-		setLayout(new MigLayout("fillx,insets 1"));
+		setLayout(new BorderLayout());
 		setSize(1000, 750);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -24,8 +25,7 @@ public class AppFrame extends JFrame {
 				"Mandatory");
 		GenswTextField genswTextField = new GenswTextField("Text");
 
-		getContentPane().add(genswLabelMandatory, "width :100:, wrap");
-		getContentPane().add(genswTextField, "width :100:, growx");
+		getContentPane().add(new GenswPasswordPanel(), BorderLayout.CENTER);
 
 		setVisible(true);
 		setLocationRelativeTo(null);
